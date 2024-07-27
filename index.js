@@ -28,8 +28,19 @@ if (randomNumber1 > randomNumber2) {
        }
     };
 
+   /* function refreshPage(){
+        location.reload();
+        return false;
+    } ;
+document.querySelector("button").onclick  refreshPage();*/
 
+const reloadButton = document.querySelector("button");
 
+// Добавляем обработчик события 'click' к кнопке
+reloadButton.addEventListener('click', () => {
+    // Перезагружаем страницу
+    window.location.reload();
+});
 
 
 
